@@ -1,9 +1,11 @@
+import java.util.Arrays;
+
 public class BubbleSort {
 
     public static void main(String[] args) {
-        String[] names = new String[]{"Steven XLIII", "Steven XVI", "David IX", "Mary XV", "Masy XIII", "Mary XX"};
+        String[] names = new String[]{"Steven XL", "Steven XVI", "David IX", "Mary XV", "Masy XIII", "Aary XX"};
         String[] result = sort(names);
-        System.out.println("Second smallest: " + Arrays.toString(result));
+        System.out.println("Sorted List " + Arrays.toString(result));
     }
 
     public static String[] sort(String[] names) {
@@ -19,9 +21,11 @@ public class BubbleSort {
                         swap(names, i, i + 1);
                         isSorted = false;
                         break;
+                    }else if (firstStr[0].charAt(idx) < secndStr[0].charAt(idx))  {
+                        break;
                     }
                 }
-                if(secndStr[0].equals(secndStr[0])){
+                if(firstStr[0].equals(secndStr[0])){
                     int decValFirst = splitAndConvertToDecimal(names[i]);
                     int decValSecond = splitAndConvertToDecimal(names[i+1]);
                     if (decValFirst > decValSecond){
