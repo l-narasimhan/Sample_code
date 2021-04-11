@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        String[] names = new String[]{"Steven XL", "Steven XVI", "David IX", "Mary XV", "Masy XIII", "Aary XX"};
+        String[] names = new String[]{"Steven XL", "Steven XVI", "David IX", "Mary XV", "Masy XIII", "Mary XX"};
         String[] result = sort(names);
         System.out.println("Sorted List " + Arrays.toString(result));
     }
