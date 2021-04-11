@@ -3,7 +3,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         String[] names = new String[]{"Steven XLIII", "Steven XVI", "David IX", "Mary XV", "Masy XIII", "Mary XX"};
         String[] result = sort(names);
-        System.out.println("Second smallest: " + result.toString());
+        System.out.println("Sorted List " + result.toString());
     }
 
     public static String[] sort(String[] names) {
